@@ -12,13 +12,13 @@ public class variable extends OpMode {
         boolean clawclose = true;
         String name = "sylys";
         String teamname = "mad mechanic";
-        int motorangle = "45";
+        int randomNum = (int)(Math.random() * 101); // 0 to 100
 
         telemetry.addData("teamnumber", teamnumber);
 telemetry.addData("moterspeed", motoerspeed);
 telemetry.addData("clawclose", clawclose);
 telemetry.addData("name", teamname);
-telemetry.addData("motorangle", motorangle);
+telemetry.addData("motorangle", randomNum);
 
     }
 
